@@ -1,0 +1,20 @@
+{% extends "base.html" %} 
+{% load static %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/coming_soon.css' %}" >
+{% endblock style %}
+{% block content %}
+<div class="bgimg">
+  <div class="topleft">
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+  </div>
+</div>
+{% endblock content %}
+{% block footer %}
+<script src="{% static 'js/coming_soon.js' %}"></script>
+{% endblock footer %}
+

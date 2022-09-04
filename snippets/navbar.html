@@ -1,0 +1,40 @@
+{% load static %}
+<body>   
+
+    <!-- ***** Preloader Start ***** -->
+    {% comment %} <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>   {% endcomment %}
+    <!-- ***** Preloader End ***** -->
+
+
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#" class="logo">
+                            <img src="{% static "images/geeWEB-01 (1).png"%}" alt="Softy Pinko"/>
+                        </a>
+                        <ul class="nav">
+                            {% comment %} <li><a href="/#Beranda" class="active">Beranda</a></li> {% endcomment %}
+                            <li><a href="/#Beranda" >Beranda</a></li>
+                            <li><a href="/#Tentang">Tentang</a></li>
+                            <li><a href="/#Materi">Materi</a></li>
+                            {% comment %} <li><a href="/blog">Materi</a></li> {% endcomment %}
+                            <li><a href="/#Video-Interaktif">Video Interaktif</a></li>
+                            <li><a href="/#Konseling-Gratis"> Konseling Gratis</a></li>
+                            <li><a href="/#Lifeskills">Lifeskills</a></li>
+                            <li><a href="/games">Games</a></li>
+                        </ul>
+                        
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>

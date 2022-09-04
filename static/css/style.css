@@ -1,0 +1,73 @@
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    display:inline-block;
+    width:20px;
+    height:20px;}
+.carousel-control-prev-icon{
+
+
+    background:no-repeat 50%/100% 100%
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e")}
+.carousel-control-next-icon{
+    position: static;
+    left: 100px;
+    /* background:no-repeat 50%/100% 100% */
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e")}
+.carousel-item{
+    /* style="overflow-x:auto;" */
+    position:relative;
+    display:none;
+    float:center;
+    width:100%;
+    margin-right:-100%;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    transition:-webkit-transform .6s ease-in-out;
+    transition:transform .6s ease-in-out;
+    transition:transform .6s ease-in-out,-webkit-transform .6s ease-in-out}
+@media (prefers-reduced-motion:reduce){
+    .carousel-item{
+        transition:none}}
+.carousel-item-next,.carousel-item-prev,.carousel-item.active{
+        display:block}
+.active.carousel-item-right,.carousel-item-next:not(.carousel-item-left){
+    -webkit-transform:translateX(100%);
+    transform:translateX(100%)}
+.active.carousel-item-left,.carousel-item-prev:not(.carousel-item-right){
+    -webkit-transform:translateX(-100%);
+    transform:translateX(-100%)}
+.carousel-fade .carousel-item{
+    opacity:0;
+    transition-property:opacity;
+    -webkit-transform:none;
+    transform:none}
+.carousel-fade .carousel-item-next.carousel-item-left,.carousel-fade .carousel-item-prev.carousel-item-right,.carousel-fade .carousel-item.active{
+    z-index:1;
+    opacity:1}
+.carousel-fade .active.carousel-item-left,.carousel-fade .active.carousel-item-right{
+    z-index:0;
+    opacity:0;
+    transition:0s .6s opacity}
+@media (prefers-reduced-motion:reduce){
+    .carousel-fade .active.carousel-item-left,.carousel-fade .active.carousel-item-right{
+        transition:none}}
+
+
+.smart-scroll{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.scrolled-down{
+   transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+   transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+
+
+/* .owl-carousel .owl-theme .item{
+    width: 100%;
+    height: 30%;
+} */
